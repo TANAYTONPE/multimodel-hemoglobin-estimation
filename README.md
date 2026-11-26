@@ -1,3 +1,15 @@
+---
+title: HemoLens Multimodal
+emoji: 🩸
+colorFrom: red
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # HemoLens Multimodal — Non-Invasive Hemoglobin Estimation
 
 > **Multimodal Deep Learning & Optical Colorimetry for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images**  
