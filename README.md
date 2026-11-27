@@ -3,8 +3,7 @@ title: HemoLens Multimodal
 emoji: 🩸
 colorFrom: red
 colorTo: indigo
-sdk: streamlit
-sdk_version: 1.35.0
+sdk: gradio
 app_file: app.py
 pinned: false
 license: mit
