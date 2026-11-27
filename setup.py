@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="multimodal-hemoglobin-estimation",
     version="2.0.0",
-    description="Multimodal Deep Learning for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images",
+    description="Multi-Model Deep Learning for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images",
     author="Tanay Tonpe",
     packages=find_packages(),
     python_requires=">=3.9",

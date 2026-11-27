@@ -1,5 +1,5 @@
 """
-Multimodal Non-Invasive Hemoglobin Estimation (HemoLens Multimodal)
+Multi-Model Non-Invasive Hemoglobin Estimation (HemoLens Multi-Model)
 ------------------------------------------------------------------
 Deep Learning and Optical Colorimetry for Hemoglobin Estimation from
 Fingernail Bed, Finger Skin, and Palpebral Conjunctiva Images.
@@ -48,6 +48,7 @@ from .inference_pipeline import (
     get_inference_engine,
     HemoglobinInferenceEngine,
     MultimodalInferenceEngine,
+    MultiModelInferenceEngine,
     classify_who_anemia,
 )
 
@@ -77,5 +78,6 @@ __all__ = [
     "get_inference_engine",
     "HemoglobinInferenceEngine",
     "MultimodalInferenceEngine",
+    "MultiModelInferenceEngine",
     "classify_who_anemia",
 ]

@@ -1,7 +1,7 @@
 """
 generate_pdf_dossier.py
 -----------------------
-Generates a publication-grade PDF documentation dossier for the HemoLens Multimodal
+Generates a publication-grade PDF documentation dossier for the HemoLens Multi-Model
 presentation, defense, and evaluation committee.
 """
 
@@ -13,7 +13,7 @@ class DossierPDF(FPDF):
     def header(self):
         self.set_font("Helvetica", "B", 9)
         self.set_text_color(100, 116, 139)
-        self.cell(0, 7, "HemoLens Multimodal - Clinical Presentation & Defense Dossier", border=0, align="L")
+        self.cell(0, 7, "HemoLens Multi-Model - Clinical Presentation & Defense Dossier", border=0, align="L")
         self.cell(0, 7, "Tanay Tonpe & Team", border=0, align="R")
         self.ln(9)
         self.set_draw_color(226, 232, 240)
@@ -72,7 +72,7 @@ def build_pdf():
     # Cover Title Block
     pdf.set_font("Helvetica", "B", 20)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(0, 11, "HemoLens Multimodal", align="C")
+    pdf.cell(0, 11, "HemoLens Multi-Model", align="C")
     pdf.ln(9)
     pdf.set_font("Helvetica", "B", 12)
     pdf.set_text_color(2, 132, 199)

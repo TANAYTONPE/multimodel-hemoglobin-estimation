@@ -1,6 +1,6 @@
-# HemoLens Multimodal — Non-Invasive Hemoglobin Estimation
+# HemoLens Multi-Model — Non-Invasive Hemoglobin Estimation
 
-> **Multimodal Deep Learning & Optical Colorimetry for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images**  
+> **Multi-Model Deep Learning & Optical Colorimetry for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images**  
 > **Author**: Tanay Tonpe ([@TANAYTONPE](https://github.com/TANAYTONPE))  
 > **Repository**: `multimodal-hemoglobin-estimation` · Academic & Research Prototype
 
@@ -39,12 +39,12 @@ Standard hemoglobin ($\text{Hb}$) measurement requires:
 2. **Biohazard Exposure**: Blood sampling presents pathogen exposure risks (HIV, Hepatitis B/C).
 3. **Equipment & Reagent Dependency**: Automated hematology analyzers (e.g., Sysmex, Beckman Coulter) demand expensive reagents, constant refrigeration, clean water, and trained laboratory technicians—resources frequently absent in rural or low-resource settings.
 
-### The HemoLens Multimodal Solution
-**HemoLens Multimodal** is an optical computer-vision framework that non-invasively estimates blood hemoglobin concentration ($g/dL$) directly from standard smartphone digital photographs of three key microvascular anatomical sites:
+### The HemoLens Multi-Model Solution
+**HemoLens Multi-Model** is an optical computer-vision framework that non-invasively estimates blood hemoglobin concentration ($g/dL$) directly from standard smartphone digital photographs of three key microvascular anatomical sites:
 - **Fingernail Bed (Model 1)**: Rich subungual capillary beds with minimal melanin interference.
 - **Finger Skin Tissue (Model 2)**: Epidermal and dermal perfusion reference.
 - **Palpebral Conjunctiva (Model 3)**: Thin, unpigmented mucous membrane of the lower inner eyelid directly reflecting systemic microvascular blood oxygenation and pallor.
-- **Multimodal Fusion (Models 4 & 6)**: Fused latent representations combining optical colorimetry and deep convolutional features.
+- **Multi-Model Fusion (Models 4 & 6)**: Fused latent representations combining optical colorimetry and deep convolutional features.
 
 ---
 
@@ -176,7 +176,7 @@ All models were evaluated on completely held-out, patient-independent test split
 
 > **Detailed Peer-Reviewed Report**: See [`RESEARCH_PAPER_COMPARISON.md`](file:///c:/Users/tanay/.gemini/antigravity-ide/scratch/hemoglobin_project/RESEARCH_PAPER_COMPARISON.md) for the complete biophysical and statistical critique.
 
-To establish clinical relevance, HemoLens Multimodal was benchmarked directly against the newest state-of-the-art mobile non-invasive hemoglobin estimation study published in *JMIR Formative Research* (February 2026):
+To establish clinical relevance, HemoLens Multi-Model was benchmarked directly against the newest state-of-the-art mobile non-invasive hemoglobin estimation study published in *JMIR Formative Research* (February 2026):
 * **Paper**: Zuccotti et al., *"Feasibility of a Noncontact Photoplethysmography–Based Mobile App for Noninvasive Hemoglobin Monitoring: Exploratory Observational Study"*, **JMIR Form Res** 2026; 10:e78820. [DOI: 10.2196/78820](https://doi.org/10.2196/78820). Evaluated **`comestai.app`** via 90-sec facial cheek video rPPG on $N = 555$ patients.
 
 ### 📊 Direct Parameter-by-Parameter Benchmark
@@ -213,9 +213,9 @@ To establish clinical relevance, HemoLens Multimodal was benchmarked directly ag
 - [x] **Optical Quality Auditing & Specular Glare Rejection**: Automated Laplacian focus/blur measure and overexposed flash glare masking in `src/roi_extractor.py` and `src/feature_extractor.py`.
 - [x] **Multi-Domain Feature Extraction**: 1280-d frozen EfficientNet-B0 latent vectors combined with 16-d optical colorimetry (Normalized RGB, R/G ratio, Erythema Index, CIELAB $a^*$, $L^*$, HSV).
 - [x] **Model 1, Model 2, and Model 3 Trained**: Saved checkpoints with verified evaluation metrics (Conjunctiva MAE = 1.39 g/dL, Fingernail MAE = 1.58 g/dL).
-- [x] **Model 4 Multimodal Fusion**: Paired fingernail + skin feature concatenation with regularized regression.
-- [x] **Model 6 Tri-Modal Precision-Weighted Consensus Engine**: Clinically weighted multi-modality consensus engine fusing estimates across all three anatomical sites (Nail, Skin, Conjunctiva).
-- [x] **Standalone CLI Inference Tool**: Production-grade CLI prediction tool `scripts/predict.py` supporting single and multi-modality predictions, JSON output, and ROI crop saves.
+- [x] **Model 4 Multi-Model Fusion**: Paired fingernail + skin feature concatenation with regularized regression.
+- [x] **Model 6 Tri-Model Precision-Weighted Consensus Engine**: Clinically weighted multi-model consensus engine fusing estimates across all three anatomical sites (Nail, Skin, Conjunctiva).
+- [x] **Standalone CLI Inference Tool**: Production-grade CLI prediction tool `scripts/predict.py` supporting single and multi-model predictions, JSON output, and ROI crop saves.
 - [x] **Interactive Clinical Web Application**: Streamlit dashboard with local file uploader, ROI bounding box overlays, diagnostic meter, Gray-World white balance toggle, optical quality audit badge, interactive manual ROI fine-tuner, and live side-by-side anemic vs. normal clinical proof.
 - [x] **Automated Unit & Pipeline Test Suite**: 29 passing test cases in `tests/`.
 
@@ -339,7 +339,7 @@ The web application will automatically open in your browser at:
    - Upload your own smartphone JPG/PNG photo or choose from built-in sample clinical photos via the dropdown (*Normal* vs *Anemic*).
    - Toggle **Gray-World Chromatic Constancy** to normalize white balance against warm/cool lighting.
    - View real-time **Automated ROI Detection**, **Laplacian Blur Quality Audit**, **Estimated Hb ($g/dL$)**, and **WHO Anemia Severity Badge** (🟢 Normal, 🟡 Mild, 🟠 Moderate, 🔴 Severe).
-2. **Multimodal Fusion Studio (Tab 2)**:
+2. **Multi-Model Fusion Studio (Tab 2)**:
    - Input photos across up to 3 anatomical sites (Nail, Skin, Eye).
    - Run **Model 6 (Tri-Modal Consensus)** to compute precision-weighted clinical estimates (Conjunctiva 49.4%, Fingernail 30.1%, Skin 20.6%).
    - Or run **Model 4 (Dual-Branch Fusion)** for paired fingernail + skin feature concatenation.

@@ -1,6 +1,6 @@
-# 🩸 HemoLens Multimodal: Presentation Defense & Evaluation Dossier
+# 🩸 HemoLens Multi-Model: Presentation Defense & Evaluation Dossier
 
-**Project**: HemoLens Multimodal — Non-Invasive Hemoglobin Estimation  
+**Project**: HemoLens Multi-Model — Non-Invasive Hemoglobin Estimation  
 **Target Evaluation**: Final Viva / Project Committee / Clinical Review Board  
 **Target Comparison**: Zuccotti et al., *JMIR Formative Research*, Feb 2026; 10:e78820 (`comestai.app`)  
 **Status**: 100% Operational & Automated Test Verified (29/29 Tests Passing)

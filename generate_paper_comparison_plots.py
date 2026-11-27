@@ -14,7 +14,7 @@ plt.style.use("seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.
 # 1. CORE METRICS COMPARISON CHART (Paper vs HemoLens Models)
 # ==============================================================================
 fig, axes = plt.subplots(2, 3, figsize=(16, 9), dpi=200)
-fig.suptitle("HemoLens Multimodal vs. JMIR 2026 Research Paper (Zuccotti et al. / comestai.app)\nHead-to-Head Benchmark on Accuracy & Clinical Diagnostic Parameters", 
+fig.suptitle("HemoLens Multi-Model vs. JMIR 2026 Research Paper (Zuccotti et al. / comestai.app)\nHead-to-Head Benchmark on Accuracy & Clinical Diagnostic Parameters", 
              fontsize=14, fontweight="bold", y=0.98)
 
 models = ["JMIR 2026 Paper\n(comestai.app)", "Model 1\n(Fingernail)", "Model 3\n(Conjunctiva)", "Model 4\n(Fusion)"]

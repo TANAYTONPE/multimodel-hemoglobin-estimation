@@ -1,6 +1,6 @@
 # Technical Report: Training, Architecture, and Evaluation Matrix (Models 1 to 6)
 
-**Project**: HemoLens Multimodal — Non-Invasive Hemoglobin Estimation  
+**Project**: HemoLens Multi-Model — Non-Invasive Hemoglobin Estimation  
 **Author**: Tanay Tonpe  
 **Document Type**: Standalone Engineering & Experimental Benchmark Report  
 **Scope**: Model Architectures (Model 1 to Model 6), Feature Encoders, Validation Protocols, and Diagnostic Performance  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This report provides a distinct, comprehensive record of the experimental methodology, mathematical modeling, and empirical evaluation for the six regression models developed in the HemoLens Multimodal framework. 
+This report provides a distinct, comprehensive record of the experimental methodology, mathematical modeling, and empirical evaluation for the six regression models developed in the HemoLens Multi-Model framework. 
 
 To maintain clinical simplicity and operational focus, the user-facing Streamlit screening dashboard does not expose ablation experiments; it routes strictly through the **Model 6 Tri-Modal Consensus Engine**. This report serves as the standalone technical documentation detailing the offline training pipeline, feature dimensionality, cross-validation protocols, and diagnostic classification results.
 

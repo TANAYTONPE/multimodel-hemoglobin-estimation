@@ -347,8 +347,11 @@ class HemoglobinInferenceEngine:
         }
 
 
-# Class aliases
+# Class and Method aliases (Multi-Model & Multimodal compatibility)
 MultimodalInferenceEngine = HemoglobinInferenceEngine
+MultiModelInferenceEngine = HemoglobinInferenceEngine
+HemoglobinInferenceEngine.predict_multimodel_consensus = HemoglobinInferenceEngine.predict_multimodal_consensus
+HemoglobinInferenceEngine.predict_multimodel_fusion = HemoglobinInferenceEngine.predict_multimodal_fusion
 
 # Singleton engine instance
 _INFERENCE_ENGINE: Optional[HemoglobinInferenceEngine] = None

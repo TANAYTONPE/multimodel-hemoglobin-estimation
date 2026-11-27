@@ -1,8 +1,8 @@
 """
 app.py
 ------
-HemoLens: Non-Invasive Multimodel Hemoglobin Estimation
-Clinical screening dashboard supporting tri-modal optical consensus
+HemoLens: Non-Invasive Multi-Model Hemoglobin Estimation
+Clinical screening dashboard supporting multi-model optical consensus
 from Fingernail, Conjunctiva, and Skin digital photographs.
 """
 
@@ -177,9 +177,9 @@ footer {visibility: hidden;}
 # -----------------------------------------------------------------------------
 st.markdown("""
 <div class="main-header">
-    <div class="header-title">HemoLens: Non-Invasive Multimodal Hemoglobin Screening</div>
+    <div class="header-title">HemoLens: Non-Invasive Multi-Model Hemoglobin Screening</div>
     <div class="header-subtitle">
-        Tri-modal optical point-of-care estimation using palpebral conjunctiva, fingernail bed, and skin digital imaging.
+        Multi-model optical point-of-care estimation using palpebral conjunctiva, fingernail bed, and skin digital imaging.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -197,9 +197,9 @@ engine = load_engine()
 # Step 1: Compulsory 3-Image Input Selection
 # -----------------------------------------------------------------------------
 st.markdown('<div class="content-card">', unsafe_allow_html=True)
-st.markdown('<div class="card-title">1. Patient Image Acquisition (All 3 Modalities Compulsory)</div>', unsafe_allow_html=True)
+st.markdown('<div class="card-title">1. Patient Image Acquisition (All 3 Models Compulsory)</div>', unsafe_allow_html=True)
 st.write(
-    "To ensure high-precision multimodal estimation, Model 6 requires three orthogonal tissue images "
+    "To ensure high-precision multi-model estimation, Model 6 requires three orthogonal tissue images "
     "from the same patient: Fingernail Bed, Palpebral Conjunctiva, and Finger Skin."
 )
 

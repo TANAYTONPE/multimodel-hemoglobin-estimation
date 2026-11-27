@@ -1,6 +1,6 @@
 # 🩸 HemoLens Multimodl: Comprehensive Technical Architecture, Clinical Benchmark & Team Presentation Guide
 
-**Project Name**: HemoLens Multimodal — Non-Invasive Hemoglobin Estimation  
+**Project Name**: HemoLens Multi-Model — Non-Invasive Hemoglobin Estimation  
 **Authors / Team**: Tanay Tonpe & Team (4-Member Engineering Team)  
 **Evaluated Against**: Zuccotti et al., *JMIR Formative Research*, 2026; 10:e78820 (`comestai.app`)  
 **Status**: 100% Functional & Clinically Audited (29/29 Automated Tests Passed)
@@ -26,7 +26,7 @@
     └── Stream B: Biophysical Optical Colorimetry (16 Spectroscopy Features)
                  │
                  ▼
- 4. MODEL SUITE & MULTIMODAL INFERENCE (src/inference_pipeline.py)
+ 4. MODEL SUITE & MULTI-MODEL INFERENCE (src/inference_pipeline.py)
     ├── Model 1 (Fingernail Bed Regressor)
     ├── Model 2 (Finger Skin Regressor)
     ├── Model 3 (Palpebral Conjunctiva Regressor)
