@@ -2,7 +2,7 @@
 
 > **Multi-Model Deep Learning & Optical Colorimetry for Non-Invasive Hemoglobin Estimation from Fingernail, Skin, and Conjunctival Images**  
 > **Author**: Tanay Tonpe ([@TANAYTONPE](https://github.com/TANAYTONPE))  
-> **Repository**: `multimodal-hemoglobin-estimation` · Academic & Research Prototype
+> **Repository**: `multimodel-hemoglobin-estimation` · Academic & Research Prototype
 
 ---
 
@@ -252,8 +252,8 @@ Follow these exact steps to set up the environment, install required libraries, 
 
 #### 1. Clone the repository and enter the directory:
 ```bash
-git clone https://github.com/TANAYTONPE/multimodal-hemoglobin-estimation.git
-cd multimodal-hemoglobin-estimation
+git clone https://github.com/TANAYTONPE/multimodel-hemoglobin-estimation.git
+cd multimodel-hemoglobin-estimation
 ```
 
 #### 2. Create the virtual environment:
